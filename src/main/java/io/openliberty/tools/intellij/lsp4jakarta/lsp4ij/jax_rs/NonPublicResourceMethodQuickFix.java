@@ -17,6 +17,7 @@ import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiMethod;
 import com.intellij.psi.util.PsiTreeUtil;
+import io.openliberty.tools.intellij.lsp4jakarta.lsp4ij.Messages;
 import io.openliberty.tools.intellij.lsp4jakarta.lsp4ij.codeAction.proposal.ModifyModifiersProposal;
 import io.openliberty.tools.intellij.lsp4mp4ij.psi.core.java.codeaction.ExtendedCodeAction;
 import io.openliberty.tools.intellij.lsp4mp4ij.psi.core.java.codeaction.IJavaCodeActionParticipant;
@@ -44,7 +45,7 @@ public class NonPublicResourceMethodQuickFix implements IJavaCodeActionParticipa
 
     private static final Logger LOGGER = Logger.getLogger(NonPublicResourceMethodQuickFix.class.getName());
 
-    private final static String TITLE_MESSAGE = "Make method public";
+    private final static String TITLE_MESSAGE = Messages.getMessage("MakeMethodPublic");
 
     @Override
     public String getParticipantId() {
