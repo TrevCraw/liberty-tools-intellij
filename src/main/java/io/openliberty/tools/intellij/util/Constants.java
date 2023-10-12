@@ -89,5 +89,4 @@ public final class Constants {
     public static final String LIBERTY_CONFIG_SERVER="Liberty Config";
     public static final String JAKARTA_LANG_SERVER="Eclipse LSP4Jakarta";
     public static final String MICROPROFILE_SERVER="Eclipse LSP4MP";
-
 }
